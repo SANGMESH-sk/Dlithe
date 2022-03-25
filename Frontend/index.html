@@ -1,12 +1,89 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <!-- <script src="server.js"></script> -->
+    
+    <link rel="stylesheet" href="Style.css">
+    <script src="server.js"></script>
 </head>
+
+
 <body>
-    <h1>welcome</h1>
+
+    <h2>transform: rotate(20deg):</h2>
+    <div class="a">Hello World</div>
+    <br>
+
+    <h2>transform: skewY(20deg):</h2>
+    <div class="b">Hello World</div>
+    <br>
+
+    <h2>transform: scaleY(1.5):</h2>
+    <div class="c">Hello World</div>
+
+    <div class="transition"></div>
+    absolute and realtive example -->
+    <br> <br>
+
+    <div class="animation">
+
+    </div>
+    <br> <br>
+    <div class="relative">
+        <h1>good morning</h1>
+    </div>
+    <div class="absolute">
+        <h1>good morning with absolute</h1>
+    </div>
+    <br> -->
+
+    <div class="hero">
+        <h1>good</h1>
+        <div class="highway">
+            <div class="city">
+                <div class="car">
+                    <img src="/Frontend/Assets/car.png" alt="">
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+    <div>
+        <p style="color: red;" id="var"></p>
+        <p style="color: orange;" id="demo"></p>
+        <p style="color: blueviolet;" id="demo1"></p>
+        <button onclick="hello()" style="color: brown;"> click me</button>
+        <button onclick="cli()" style="color: brown;"> click here</button>
+    </div>
+    <script>
+
+        var data = "hello world";
+        //object 
+        var person = {
+            name: "john",
+            age: 24,
+        };
+
+        document.getElementById("var").innerHTML = data;
+        document.write("documents" + " " + person.name + "<br>" + person.age);
+     
+        var data = "string";
+        var num = 1234;
+        var x;
+        var boolean = true;
+        var ar = [1, 2, 3, 4, 5];
+
+        document.write(typeof (num)); //number
+        document.write(typeof (x)); //undefined
+        document.write(typeof (person));//object
+        document.write(typeof (ar));//object
+    </script>
 </body>
+
 </html>

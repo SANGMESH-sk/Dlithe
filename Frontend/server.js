@@ -29,6 +29,6 @@ console.log(typeof(boolean));//boolean
 console.log(typeof(ar)); //object
 
 let str = "Apple, Banana, Kiwi";
-document.getElementById("demo").innerHTML = str.slice(-12);
+
 
 
