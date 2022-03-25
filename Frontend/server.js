@@ -28,7 +28,9 @@ console.log(typeof(x));//undefined
 console.log(typeof(boolean));//boolean
 console.log(typeof(ar)); //object
 
-let str = "Apple, Banana, Kiwi";
+var txt = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+var length = txt.length;
+document.write(length)
 
 
 
