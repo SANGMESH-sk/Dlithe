@@ -72,9 +72,7 @@ document.write(fruits1 + "<br>");
 
 // for loop for iterating array 
 for(var i=0; i<fruits1.length; i++){
-
     document.write("<br>"+fruits1[i] +"<br>")
-   
 }
 // by using using entries method we iterate index values
 var entry=fruits1.entries();

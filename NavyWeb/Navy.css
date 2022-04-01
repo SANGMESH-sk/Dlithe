@@ -1,0 +1,99 @@
+body{
+    background-color: rgb(109, 109, 238);
+}
+/*        header links color     */
+.header a{
+    color: mintcream;
+    }
+    /*   =====  navbar style ==== */
+.navbar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    box-sizing: border-box;
+    background-color: rgb(11, 11, 53);
+    height: 50px;
+}
+.navbar .ul li{
+    float: left;
+    margin-right: 60px;
+    color: white;
+    text-decoration: none;
+    list-style: none;
+    font-size: larger;
+}
+ li a{
+    font-style: none;
+    text-decoration: none;
+    color: antiquewhite;
+}
+
+.header #site{
+    left: 1oopx;
+}
+ /* ===images below navbar  style used flex box inside 3 div tag*/
+.images{
+    background-color: beige;
+    height: 120px;
+    display: flex;
+}
+img{
+    width: 300px;
+    height: 80px;
+    margin-top: 20px;
+    margin-left: 20px;
+}
+.images >div{
+    font-size: large;
+    margin-right: 60px;
+}
+/* === middle large image used flex ===  */
+.box{
+    display: flex;
+    color: azure;
+}
+.animation{
+    width:300px;
+    height: 80px; 
+    background-color: rgb(22, 87, 87);
+     margin-top: 20px; 
+     margin-left: 60px;
+     padding-left: 100px;
+    color: aliceblue;
+    
+}
+/* ====used for some heding below main image */
+.reader{
+    width: auto;
+    height: 120px;
+    background-color: whitesmoke;
+}
+ /* four images with a flex box */
+.block{
+    display: flex;
+    flex-wrap: nowrap;
+    background-color: rgb(86, 112, 138);
+}
+.block>div{
+    background-color: #6b6b6b;
+    width: 300px;
+    margin: 0px,10px;
+    text-align: center;
+    line-height: 50px;
+    font-size: 30px;
+}
+.block>div>img{
+    width: 250px;
+    height: 350px;
+    margin-top: 30px;
+    margin-right: 20px;
+}
+/* ===========footer === ===*/
+.footer{
+    display: flex;
+}
+#anchor{
+    color: rgb(250, 147, 12);
+    top: 50%;
+}

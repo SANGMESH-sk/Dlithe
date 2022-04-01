@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            background-color: rgb(101, 119, 119);
+        }
+
+        input[type=text],
+        input[type=password] {
+            width: 100%;
+            padding: 12px 20px;
+            margin: 8px 0;
+            display: inline-block;
+            border: 1px solid #ccc;
+            box-sizing: border-box;
+        }
+
+        button {
+            background-color: #5dd3a8;
+            color: white;
+            padding: 14px 20px;
+            margin: 8px 0;
+            border: none;
+
+            width: 100%;
+        }
+    </style>
+</head>
+
+<body>
+    <!DOCTYPE html>
+    <html>
+
+    <head>
+        <title>Login Form</title>
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+    </head>
+    <style>
+        body {
+
+            padding: 0;
+            background-color: #6abadeba;
+            font-family: 'Arial';
+        }
+
+        .login {
+            width: 300px;
+            overflow: hidden;
+            margin: auto;
+            margin: 20 0 0 40px;
+            padding: 10px 80px;
+            background: #23463f;
+            border-radius: 15px;
+
+        }
+
+        h2 {
+            text-align: center;
+            color: #277582;
+            padding: 20px;
+        }
+
+        label {
+            color: #08ffd1;
+            font-size: 17px;
+        }
+
+        #Uname {
+            width: 300px;
+            height: 30px;
+            border: none;
+            border-radius: 3px;
+            padding-left: 8px;
+        }
+
+        .Pass {
+            width: 300px;
+            height: 30px;
+            border: none;
+            border-radius: 3px;
+            padding-left: 5px;
+
+        }
+
+        span {
+            color: white;
+            font-size: 17px;
+        }
+
+        a {
+            float: right;
+            background-color: grey;
+        }
+    </style>
+
+    <body>
+        <br> <br> <br>
+        <div class="login">
+            <h1 style="color: beige;">Register Here</h1>
+            <label><b>User Name
+                </b>
+            </label>
+            <input type="text" name="Uname" id="Uname" placeholder="Username">
+            <br><br>
+            <label><b>Email
+                </b>
+                <input type="email" name="Email" placeholder="Email" class="Pass">
+                <br><br>
+                <label><b>Password
+                    </b>
+                </label>
+                <input type="Password" name="Pass" class="Pass" placeholder="Password">
+                <br><br>
+                <center><button style="color: red; background-color: rgb(86, 112, 112);" onclick="submit()">Register</button></center>
+        </div>
+        <script>
+            var name=document.getElementById("Uname")
+          
+            
+            function submit(){
+               if(name== ""){
+                   alert(" pls add username")
+               }else{
+                   alert("pls add password")
+               }
+            }
+        </script>
+    </body>
+
+    </html>

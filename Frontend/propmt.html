@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <ul id="list">
+        <li>nodejs</li>
+        <li>java</li>
+        <li>JS</li>
+    </ul>
+
+   <input type="text" name="" id="cname">
+    <p>Hello Everyone!!! How is the <i id="course">Training</i></p>
+    <a id="myAnchor"  href="facebook.com" title="facebook"></a>
+    
+    <button type="button" onclick="submit()">Submit</button>
+    <button type="button" onclick="AskName()">Click me!!!</button>
+    <button type="button" onclick="GetList()">View Courses</button>
+    <button type="button" onclick="ChangeAnchorAttributes()">Anchor Demo</button>
+    <button type="button" onclick="ChangeParaContent()">Training Details</button>
+    <button type="button" onclick="Microsoft()">Open Microsoft Website</button>
+</body>
+<script>
+      function Microsoft()
+        {
+            window.open("http://www.microsoft.com")
+        }
+        function ChangeParaContent()
+        {
+            var coursename=document.getElementById("cname").value;
+            document.getElementById("course").innerHTML=coursename;
+
+        }
+        //Change the Anchor tag attributes
+        function ChangeAnchorAttributes()
+        {
+            document.getElementById("myAnchor").innerHTML="DLithe";
+            document.getElementById("myAnchor").href="http://www.dlithe.com";
+            document.getElementById("myAnchor").target="_blank";
+            document.getElementById("myAnchor").title="DLithe institute";
+        }
+       
+</script>
+</html>
