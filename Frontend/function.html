@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="/Frontend/oops.js"></script>
+    <script src="function.js"></script>
+</head>
+
+<body>
+    <button onclick="clickme()">clickme</button>
+    <button onmouseover="clickme()">clickme</button>
+    <button onmousedown="clickme()">clickme</button>
+    <button onclick="myFunction()">Try it</button>
+    <!-- confirm example -->
+    <button onclick="myFunction()">Try it</button>
+
+    <!-- prompt example -->
+    <p id="demo"></p>
+
+    <script>
+        function myFunction() {
+            let text;
+            let person = prompt("Please enter your name:", "Harry Potter");
+            if (person == null || person == "") {
+                text = "User cancelled the prompt.";
+            } else {
+                text = "Hello " + person + "! How are you today?";
+            }
+            document.getElementById("demo").innerHTML = text;
+        }
+    </script>
+</body>
+
+</html>
