@@ -7,11 +7,12 @@ function Book(name, author, type) {
 }
 
 function Display() {}
+
 //Add method to display prototype in ui
 Display.prototype.add = function (book) {
   console.log("adding to UI");
 
-  tableBody = document.getElementById("tableBody");
+  var tableBody = document.getElementById("tableBody");
   let uiString = `<tr>
             
     <td>${book.name}</td>
