@@ -1,0 +1,51 @@
+sql operators
+1.arithamatic operator (+,-,*,/,%)
+2.logical operator (and,between,in,like,not,or)
+3.relational operators(=,>,</>=,<=,<>)
+4.
+
+2.Logical operator
+ex:-
+1. between and operator
+ EX:- select * from students where salary between(10000 and 40000)
+
+2.IN and NOT IN operator:- 
+IN OPERATOR
+ EX:- select * from students where designation in('it','hr')
+NOT IN OPERATOR
+EX:- select * from students where designation not in('it','hr')
+
+ 3. OR operator:-
+ EX:- select * from students where designation not in('it' or 'hr')
+
+4.like operator it is use for matching the pattern and retriving the data
+
+ex:-
+1.select * from students where name like 's%' 
+ -- show the data where name start with s
+
+2.select * from students where name like '%s' 
+ --show the data where name end with s
+
+3.select * from students where name like 's%m' 
+ --show the data where name end with s and with m
+3.select * from students where name like '__r%'  
+ --show the data where  r in the 3rd position
+
+
+
+
+3. -- reational operator 
+EX:-
+1.  select * from students where salary >20000
+
+1.  select * from students where salary >=30000
+
+1.  select * from students where salary <50000
+
+1.  select * from students where salary <>40000
+
+
+ -- Distinct :- the keyword it is use for return only diffrent values
+
+EX:- select DISTINCT name from students

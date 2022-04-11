@@ -1,0 +1,127 @@
+sql (structure query language)
+
+its having 5 statement
+1.ddl = data definationlanguage
+2.dml = data manipulation language
+3.dql = data query language 
+4.tcl = transction control language
+5.dcl = data control language
+
+1.DDL (create ,alter,drop)
+
+  1.create it is use for creating the database and table
+   syntax and ex:-
+
+   create database school;
+   use school 
+   
+    --creating table and table name is school--
+   example:-  creating table 
+   
+    create table students (ID int,
+    NAME varchar(20),designation varchar(30))
+
+  2.  Alter == it is use for modifing the data 
+  example:-
+
+   alter table students alter column NAME varchar(30)
+
+   -- we can add column also in the table using alter --
+   example:-
+   
+   alter table studentscADD AGE int
+
+  3. drop == it is use for dropping the table in the database
+   exampl:-
+   drop table students
+
+
+   == 2. dml = data manupalation language ==
+       its having 4 types  1.insert 2.update 3.delete 4.truncate
+      select * from students -- it is use for retriving the data
+
+ a. insert = it use for adding the values in the table 
+  example:-
+  insert into  studets values(1,'john','it'20000)
+  insert into studets values(2,'jonny','hr'30000)
+  insert into studets values(3,'brett','mng'20000)
+  insert into studets values(4,'scott','ca'40000)
+  insert into studets values(5,'david','dev'25000)
+
+ b.UPDATE:- it is use for updating the existing records in a table
+  Example:- 
+  update students set
+  Designation='BE'
+  where ID=3
+it will update data with using id
+
+ c.delete:- it is use for deleting the columns inside table
+-- it use for deleting particular by selecting their id
+ delete from students where ID=1
+ select * from students 
+
+  -- now we are adding the values id 1
+ insert into students values(1,'john','hr')
+ select * from students
+
+ --now again we are deleing the values of id 2
+ delete from students where ID=2
+ select * from students
+
+   --update 
+ -- it will update the data to existing column 
+
+  update students set
+  Designation='BE'
+  where ID=3
+
+  update students set
+  Designation='BE'
+  where ID=3
+
+ d.Truncate = it is use for deleting all the data inside table
+ example:-
+ truncate table students
+
+ 3. dql(data query language) -  it is use for all the data in the table
+ ex:- select * from students
+
+
+
+
+
+
+
+
+
+
+
+
+select * from students where name like 's%m'
+select * from students where id>2 and designation='BE'
+select count(ID) as 'avg id' from students
+
+select * from students order by id desc
+
+select avg(ID),designation from students group by designation
+
+select avg(ID),designation from students group by designation  order by designation ASC
+select avg(ID),designation from students group by designation having avg(ID)>2  order by designation ASC
+
+select * from students where designation in('it', 'hr')
+select * from students
+
+update students set designation ='it' where name='sam'
+select * from students
+insert into students values(3,'brett','lead',45000)
+insert into students values(4,'july','acc',45000)
+insert into students values(5,'scott','eng',45000)
+insert into students values(7,'mike','it',55000)
+select * from students
+alter table students add salary int
+update students set name='priya' where id =3
+select * from students
+update students set  salary=55000 where id=4
+delete from students where designation='it'
+
+select * from students where salary between 30000 and 50000 not

@@ -1,0 +1,44 @@
+ Aggregate function 
+
+  An aggregate function performs a calculation on a set of values, 
+ and returns a single value. Except for COUNT(*), aggregate functions ignore null values.
+ Aggregate functions are often used with the GROUP BY clause of the SELECT statement.
+
+ EX:- 
+   1.select max(ID) as 'maixmum id' from student
+
+   2.select min(ID) as 'minimum id' from student
+
+   3.select count(ID) as 'total id' from student
+
+   4.select avg(ID) as 'avg id' from student
+
+ 2. order by:- order by cloause it use retriving the data in ascending or descending order
+ 
+ EX:- order in name , ascending order or descending order
+    1. select * from students order by name 
+
+    2. select * from students order by designation asce
+
+    3. select * from students order by id desc
+
+3. group by :- it groups the rows that have same values. the group by 
+              statement is used with aggregate function to group the result
+ 
+ Ex:- select max(id)  designation  from students group by designation
+
+
+4. group by with order by:-
+ ex:- 1. select avg(id) designation from students group by designation order by designation desc
+
+ 2.select avg(salary) designation from students group by designation order by designation desc
+
+ 3.select avg(ID),designation from students group by designation
+
+ 4. select avg(ID),designation from students group by designation  order by designation ASC
+
+ 5.select avg(ID),designation from students group by designation having avg(ID)>2  order by designation ASC
+
+
+ 5.having :- the having keyword was added beacuse the where keyword cannot be used with aggregate function
+  EX:-select count(id),name from students group by name having count(id)>2
