@@ -190,4 +190,3 @@ Bike.prototype=Object.create(Vehicle.prototype);
 var bike=new Bike("Honda");  
 document.writeln(bike.display());  
   
-  

@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    /* float  */
+    li{
+        float: right; /*and left */
+        list-style: none;
+    }
+    /* -- pagination   */
+.pagination a {     /* selecting anchor tag */
+  color: black;
+  float: left;
+  padding: 8px 16px;
+  border: 1px solid #ddd;
+  text-decoration: none;
+}
+
+ /* selecting anchor active class */
+.pagination a.active {  
+  background-color: #4CAF50;
+  color: white;
+  border-radius: 5px;
+}
+
+/* applying hover effect */
+.pagination a:hover:not(.active) {
+  background-color: #ddd;
+  border-radius: 5px;
+}
+/* text effects */
+h1{
+     font-size: 20px; /* changing text size */
+    font-family: 'Courier New', Courier, monospace;  /* font style */
+   white-space: nowrap;
+  width: 200px;
+  border: 1px solid #000000; 
+   overflow: hidden;                  /*   The CSS text-overflow property specifies how overflowed . */
+                                   /* content that is not displayed should be signaled to the user */
+  text-overflow: ellipsis;
+}
+/* css links */
+a:link{
+color:red;
+}
+a:visited{
+color:green;
+}
+a:hover{
+    color:hotpink;
+}
+a:active{
+    color: blueviolet;
+}
+</style>
+
+<body>
+    <h1>float property example</h1>
+    <!-- float:- The float property specifies whether an element should float to the left, 
+    right, or not at all
+    ex:- -->
+    <ul>
+        <li> name </li>
+        <li>lastname</li>
+        <li>age</li>
+        <li>address</li>
+        <li>locality</li>
+    </ul>
+   <!--  2.-------- pagination  example ------ -->
+    <div class="pagination">
+        <a href="#">&laquo;</a>
+        <a href="#">1</a>
+        <a href="#" class="active">2</a>
+        <a href="#">3</a>
+        <a href="#">4</a>
+        <a href="#">5</a>
+        <a href="#">6</a>
+        <a href="#">&raquo;</a>
+      </div>
+<br> <br><br>
+      <!-- ------              3. text effects -------------->
+      <h1>Text Effects Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis, nostrum.</h1>
+
+      <!-- -------------------- 4.css links  -------------------------->
+      <!-- the css four links states are -->
+      <!-- 1.a:link - a normal, unvisted link
+      2.a:visited - a link the user has visited
+      3.a:hover - alink when the user mouses over it 
+      4.a:active - a link moment it is clicked -->
+      <a href="www.dlithe.com">Dlithe</a>
+</body>
+
+</html>

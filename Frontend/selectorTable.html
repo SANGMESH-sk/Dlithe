@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+      
+        h1{
+            color: red;
+        }
+        /* selectrs using element */
+        p{
+            color: aqua;
+        }
+             /* selectrs using id */
+        #para{
+            color: blue;
+        }
+        /* selectrs using class */
+        .para{
+            color: blueviolet;
+        }
+        h1::first-line {
+  color: #ff0000;
+  font-variant: small-caps;
+}
+.backgroundimage{
+    width: 200px;
+    height: 200px;
+    background-image: url("/BootstrapProject/images/business-concepts-600w-124904123.webp");
+
+}
+#customers {
+  font-family: Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+#customers td, #customers th {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+#customers tr:nth-child(even){background-color: #f2f2f2;}
+
+#customers tr:hover {background-color: #ddd;}
+
+#customers th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: #04AA6D;
+  color: white;
+}
+          
+    </style>
+</head>
+<body>
+    <!--1. inline style sheet where we giving style inside tag -->
+     <!--2. using a style inside html or head tag is called internal style sheet  -->
+     <!--3. using a external style sheet for html by using css link called external style sheet  -->
+    <h1 style="color: red;">Style Sheet Using inline, Internal  external Styleshet</h1>
+
+    <!-- selectors -->
+    <!--1. Simple selectors (select elements based on name, id, class)
+        2.Combinator selectors (select elements based on a specific relationship between them)
+        3.Pseudo-class selectors (select elements based on a certain state)
+        4.Pseudo-elements selectors (select and style a part of an element) -->
+        <!-- EX:- selectors -->
+        <p>hello selectors</p>
+        <p id="para">good morning</p>
+        <p class="para">Lorem ipsum dolor sit amet.</p>
+
+       <!--   2.   -----   useing pseudo elements -->
+        <h1>Lorem ipsum dolor sit amet, <br>
+            consectetur adipisicing elit. Dolorem, nemo.</h1>
+
+    <!--3.      using background image -->
+    <div class="backgroundimage">
+
+    </div>
+
+    <!-- 4.style for table -->
+    <table id="customers">
+        <tr>
+          <th>Company</th>
+          <th>Contact</th>
+          <th>Country</th>
+        </tr>
+        <tr>
+          <td>Alfreds Futterkiste</td>
+          <td>Maria Anders</td>
+          <td>Germany</td>
+        </tr>
+        <tr>
+          <td>Berglunds snabbköp</td>
+          <td>Christina Berglund</td>
+          <td>Sweden</td>
+        </tr>
+        <tr>
+          <td>Centro comercial Moctezuma</td>
+          <td>Francisco Chang</td>
+          <td>Mexico</td>
+        </tr>
+        <tr>
+          <td>Ernst Handel</td>
+          <td>Roland Mendel</td>
+          <td>Austria</td>
+        </tr>
+        <tr>
+          <td>Island Trading</td>
+          <td>Helen Bennett</td>
+          <td>UK</td>
+        </tr>
+        <tr>
+          <td>Königlich Essen</td>
+          <td>Philip Cramer</td>
+          <td>Germany</td>
+        </tr>
+        <tr>
+          <td>Laughing Bacchus Winecellars</td>
+          <td>Yoshi Tannamuri</td>
+          <td>Canada</td>
+        </tr>
+        <tr>
+          <td>Magazzini Alimentari Riuniti</td>
+          <td>Giovanni Rovelli</td>
+          <td>Italy</td>
+        </tr>
+        <tr>
+          <td>North/South</td>
+          <td>Simon Crowther</td>
+          <td>UK</td>
+        </tr>
+        <tr>
+          <td>Paris spécialités</td>
+          <td>Marie Bertrand</td>
+          <td>France</td>
+        </tr>
+      </table>
+</body>
+</html>
