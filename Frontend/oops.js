@@ -3,12 +3,12 @@
 const employee=
 {
     empid:100,
-    empname:"John",
-    designation:"HR"
+    empname:"rani",
+    designation:"it"
 }
-document.write(employee.empid+"<br>");
-document.write(employee.empname+"<br>");
-document.write(employee.designation+"<br>");
+document.write(employee.empid+ "<br>");
+document.write(employee.empname+ "<br>");
+document.write(employee.designation+ "<br>");
 
 var details="";
 for (var emp in employee)
@@ -35,11 +35,11 @@ for (var emp in employee)
 }
 document.write(details+"<br>");
 
-//Nested Objects
-const Course=
+//Nested Objects in js
+const courses=
 {
     courseid:100,
-    coursename:"WebUI",
+    coursename:"react",
     //Nested Object
         coursedetails:
         {
@@ -50,39 +50,25 @@ const Course=
         }
 
 }
-console.log(Course.courseid +"nested object");
+console.log(courses.courseid +"nested object");
 //accessing nested object
-console.log(Course.coursedetails.coursedetail1 +"nested obj1");
+console.log(courses.coursedetails.coursedetail1 +"nested obj1");
 // document.write(Course.courseid+"<br>");
 
 
 //Function in an object
-const Web=
+const person4=
 {
-    course1:"HTML",
-    course2:"CSS",
-    course3:"JS",
+    name:"chetu",
+    age:24,
+    lastname:'biradar',
     //this keyword used for accessing keys in the object
-    GetCourses:function()
+    details:function()
     {
-        return this.course1+","+this.course2+","+this.course3+"<br>";    
+        return this.name+","+this.age+","+this.lastname+"<br>";    
     }
 }
-document.write("<hr>"+Web.GetCourses());
-
-//Pass by reference in objects
-//empname and emp1 share the same memory address
-function GetName(empname)
-{
-    empname.employeename="Peter";
-}
-const emp1=
-{
-    employeename:"John"
-};
-document.write(emp1.employeename+"<br>");
-GetName(emp1);
-document.write(emp1.employeename+"<br>");
+document.write("<hr>"+person4.details());
 
 // prototype example 
 // by using prototype we can crate element in function
