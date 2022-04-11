@@ -1,5 +1,5 @@
 
-// proto type in js
+// javascript objects and properties
 const employee=
 {
     empid:100,
@@ -95,7 +95,7 @@ student.prototype.age=25;
 var stu=new student()
 console.log(stu);
 
-//class example in js
+//1.class example in js
 
 class person{
     constructor(name){
@@ -105,11 +105,37 @@ class person{
     greet(){
         console.log(`hi good morning ${this.name} `)
     }
+     add(a,b){
+        return a+b;
+    }
 }
 var person1=new person("priya");
 console.log(person1.name)
 console.log(person1.greet())
+console.log(person1.add(34,5))
 
+//2. inheritance example parent is person children is programmer
+class programmer extends person{
+    constructor(name,language){
+    super(name);
+    this.language=language;
+    }
+    lang(){
+        if(this.language==""){
+            return '.net'
+        }
+        else{
+            return 'javascript'
+        }
+    }
+    
+}
+var person2=new programmer("raj123"); 
+console.log(person2.name) //raj 123
+console.log(person2.lang()) //
+
+
+ //3. encapsulation in js :- it is use for wrapping up data its having two methods getter and setter methods
 // getter and setter method in js
 class employee1 {
     constructor(name){
@@ -128,3 +154,54 @@ var emp=new employee1("piri")
 console.log(emp.name)
 emp.personName="priya reddy"
 console.log(emp.name)
+
+// 4.polymorphism in javascript
+// polymorphism means many forms  representing
+
+class animal{
+    constructor(name1){
+        this.name1=name1
+    }
+    eats(){
+        console.log(this.name1+'eats food')
+    }
+}
+class alligator extends animal{
+    eats(){                // overiding the eats method
+        super.eats         // accessing eats from parent
+        console.log(this.name1+'eats fishesh')
+    }
+}
+let murphy=new alligator('murthy')
+console.log(murphy.name1) //murthy
+console.log(murphy.eats()) // murthy eats fishesh
+
+
+//5.abstract in js
+// Abstraction in js:- An abstraction is a way of hiding the implemention details
+// and showing only the functionality to the user 
+// to achieve action in a class we have to declare atleast one abstract method
+
+
+
+//Creating a constructor function  
+function Vehicle()  
+{  
+    this.vehicleName="vehicleName";  
+    throw new Error("You cannot create an instance of Abstract Class");  
+}  
+Vehicle.prototype.display=function()  
+{  
+    return "Vehicle is: " + this.vehicleName;  
+}  
+//Creating a constructor function  
+function Bike(vehicleName)  
+{  
+    this.vehicleName=vehicleName;  
+}  
+//Creating object without using the function constructor  
+Bike.prototype=Object.create(Vehicle.prototype);  
+var bike=new Bike("Honda");  
+document.writeln(bike.display());  
+  
+  
