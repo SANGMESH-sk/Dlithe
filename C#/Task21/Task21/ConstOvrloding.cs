@@ -10,6 +10,8 @@ namespace Task21
     {
         /* is a special method which is ivoked automatically at the time of object creation 
          there are two types 
+        constructor name is same as class name
+        not same constructor  but we acheieve parameter constructor
         1. default constructor  == which has no argument is called default
         2.parameterized constructor == which has argument
 
@@ -28,11 +30,17 @@ namespace Task21
             this.name = s;
             this.num = n;
         }
+        ConstOvrloding(String s, int n,int m)
+        {
+            this.name = s;
+            this.num = n;
+            Console.WriteLine("accessing constructor overloading"+ s+n+m);
+        }
 
         public static void Main()
         {
             ConstOvrloding c1=new ConstOvrloding("kgf",2);
-            ConstOvrloding c2 = new ConstOvrloding("kgf2", 3);
+            ConstOvrloding c2 = new ConstOvrloding("constructor", 3,5);
 
             Console.WriteLine("accesing parameterized cons"+ " "+c1.name +" "+ c1.num);
             Console.WriteLine("accesing parameterized cons" + " " + c2.name + " " + c2.num);

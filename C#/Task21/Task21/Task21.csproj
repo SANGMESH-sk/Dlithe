@@ -33,7 +33,7 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <PropertyGroup>
-    <StartupObject>Task21.sumofnatural</StartupObject>
+    <StartupObject>Task21.Calculator</StartupObject>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
@@ -46,11 +46,14 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Calculator.cs" />
     <Compile Include="Class1.cs" />
     <Compile Include="ConstOvrloding.cs" />
+    <Compile Include="Instance.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="sumofnatural.cs" />
+    <Compile Include="Ternary.cs" />
     <Compile Include="UserDisplay.cs" />
   </ItemGroup>
   <ItemGroup>
