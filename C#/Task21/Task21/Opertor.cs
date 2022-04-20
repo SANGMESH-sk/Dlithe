@@ -6,16 +6,13 @@ using System.Threading.Tasks;
 
 namespace Task21
 {
-    internal class Ternary
+    internal class Opertor
     {
-        // ternary operator example
         public void Tern()
         {
             int x = 20, y = 30;
-            String result = x > y ? "x is bigger y" : "y is bigger than x";
+                    String result = x > y ? "x is bigger y" : "y is bigger than x";
             Console.WriteLine(result);
-            
-
             // break statement
 
             for(int i=0; i<5; i++)
@@ -32,8 +29,6 @@ namespace Task21
                 if (i == 4)
                 {
                     continue;
-                    
-
                 }
                 Console.WriteLine(i);
             }
@@ -42,11 +37,8 @@ namespace Task21
 
         public static void Main()
         {
-            Ternary ternary = new Ternary();
+            Opertor ternary = new Opertor();
             ternary.Tern();
-
         }
-
-    }
-
+    } 
 }

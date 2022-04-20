@@ -22,15 +22,18 @@ namespace Task21
         
         }
         int num;
-        String name;
+        int name;
+  
 
         //parameter constructor
-        ConstOvrloding(String s,int n)
+        // finding the value of area
+        ConstOvrloding(int s,int n)
         {
-            this.name = s;
-            this.num = n;
+            this.num = s * n;
+            Console.WriteLine(this.num);
         }
-        ConstOvrloding(String s, int n,int m)
+
+        ConstOvrloding(int s, int n,int m)
         {
             this.name = s;
             this.num = n;
@@ -39,8 +42,8 @@ namespace Task21
 
         public static void Main()
         {
-            ConstOvrloding c1=new ConstOvrloding("kgf",2);
-            ConstOvrloding c2 = new ConstOvrloding("constructor", 3,5);
+            ConstOvrloding c1=new ConstOvrloding(3,2);
+            ConstOvrloding c2 = new ConstOvrloding(4, 3,5);
 
             Console.WriteLine("accesing parameterized cons"+ " "+c1.name +" "+ c1.num);
             Console.WriteLine("accesing parameterized cons" + " " + c2.name + " " + c2.num);

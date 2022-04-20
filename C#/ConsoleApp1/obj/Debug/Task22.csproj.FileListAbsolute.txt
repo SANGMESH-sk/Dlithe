@@ -1,0 +1,8 @@
+D:\Dlithe\C#\ConsoleApp1\bin\Debug\Task22.exe.config
+D:\Dlithe\C#\ConsoleApp1\bin\Debug\Task22.exe
+D:\Dlithe\C#\ConsoleApp1\bin\Debug\Task22.pdb
+D:\Dlithe\C#\ConsoleApp1\obj\Debug\Task22.csproj.AssemblyReference.cache
+D:\Dlithe\C#\ConsoleApp1\obj\Debug\Task22.csproj.SuggestedBindingRedirects.cache
+D:\Dlithe\C#\ConsoleApp1\obj\Debug\Task22.csproj.CoreCompileInputs.cache
+D:\Dlithe\C#\ConsoleApp1\obj\Debug\Task22.exe
+D:\Dlithe\C#\ConsoleApp1\obj\Debug\Task22.pdb

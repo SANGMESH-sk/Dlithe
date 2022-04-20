@@ -1,0 +1,8 @@
+D:\Dlithe\C#\helloCsharp\helloCsharp\bin\Debug\helloCsharp.exe.config
+D:\Dlithe\C#\helloCsharp\helloCsharp\bin\Debug\helloCsharp.exe
+D:\Dlithe\C#\helloCsharp\helloCsharp\bin\Debug\helloCsharp.pdb
+D:\Dlithe\C#\helloCsharp\helloCsharp\obj\Debug\helloCsharp.csproj.AssemblyReference.cache
+D:\Dlithe\C#\helloCsharp\helloCsharp\obj\Debug\helloCsharp.csproj.SuggestedBindingRedirects.cache
+D:\Dlithe\C#\helloCsharp\helloCsharp\obj\Debug\helloCsharp.csproj.CoreCompileInputs.cache
+D:\Dlithe\C#\helloCsharp\helloCsharp\obj\Debug\helloCsharp.exe
+D:\Dlithe\C#\helloCsharp\helloCsharp\obj\Debug\helloCsharp.pdb
