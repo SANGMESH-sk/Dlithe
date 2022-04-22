@@ -1,0 +1,8 @@
+D:\Dlithe\C#\Task23\Task23\bin\Debug\Task23.exe.config
+D:\Dlithe\C#\Task23\Task23\bin\Debug\Task23.exe
+D:\Dlithe\C#\Task23\Task23\bin\Debug\Task23.pdb
+D:\Dlithe\C#\Task23\Task23\obj\Debug\Task23.csproj.AssemblyReference.cache
+D:\Dlithe\C#\Task23\Task23\obj\Debug\Task23.csproj.SuggestedBindingRedirects.cache
+D:\Dlithe\C#\Task23\Task23\obj\Debug\Task23.csproj.CoreCompileInputs.cache
+D:\Dlithe\C#\Task23\Task23\obj\Debug\Task23.exe
+D:\Dlithe\C#\Task23\Task23\obj\Debug\Task23.pdb
