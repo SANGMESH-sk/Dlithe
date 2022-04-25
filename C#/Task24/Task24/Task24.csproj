@@ -33,7 +33,7 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <PropertyGroup>
-    <StartupObject>Task24.interfaces</StartupObject>
+    <StartupObject>Task24.eleBillAbstraction.total</StartupObject>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
@@ -49,7 +49,10 @@
     <Compile Include="Abstraction.cs" />
     <Compile Include="DeligateApp1.cs" />
     <Compile Include="Dictonary1.cs" />
+    <Compile Include="eleBillAbstraction.cs" />
     <Compile Include="Errorhandling.cs" />
+    <Compile Include="Hybridinheritance.cs" />
+    <Compile Include="Inheritance.cs" />
     <Compile Include="interfaces.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

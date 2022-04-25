@@ -48,6 +48,8 @@
   <ItemGroup>
     <Compile Include="Dictionary.cs" />
     <Compile Include="Exception.cs" />
+    <Compile Include="Generic.cs" />
+    <Compile Include="GenericsCalc.cs" />
     <Compile Include="Hashtable.cs" />
     <Compile Include="MultiCastDeligate.cs" />
     <Compile Include="Program.cs" />
