@@ -33,7 +33,7 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <PropertyGroup>
-    <StartupObject>Task26.Exception</StartupObject>
+    <StartupObject>Task26.testMyexception</StartupObject>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
@@ -49,11 +49,11 @@
     <Compile Include="Dictionary.cs" />
     <Compile Include="Exception.cs" />
     <Compile Include="Generic.cs" />
-    <Compile Include="GenericsCalc.cs" />
     <Compile Include="Hashtable.cs" />
     <Compile Include="MultiCastDeligate.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="VotingEligibilty.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />

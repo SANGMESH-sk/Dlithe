@@ -15,13 +15,15 @@ namespace Task26
         public static void Main()
         {
             Dictionary<int, string> dic = new Dictionary<int, string>();
+        
             // adding key value pairs in the dictionary using add method
             dic.Add(1, "java");
             dic.Add(2, "python");
             dic.Add(3, "js");
             dic.Add(4, "c#");
             dic.Add(5, "c++");
-          
+
+            
             foreach(KeyValuePair<int,string> kvp in dic)
             {
                 Console.WriteLine("key:{0},Value{1}",kvp.Key, kvp.Value);

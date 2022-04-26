@@ -12,21 +12,29 @@ namespace Task26
     //key must be unique cannot be null
     //values can be null or dublicate
 
-    internal class Hashtable
+    internal class Hahtable
     {
-       
-
-        private static void Main()
+       class table
         {
-            Hashtable hashtable = new Hashtable();
-            hashtable.Add(1, "java");
-            hashtable.Add(2, "java23");
-        }
-        
+            public static void Main()
+            {
+                Hashtable hashtable = new Hashtable();
+                hashtable.Add(1, "hello");
+                hashtable.Add(2, "java");
+                hashtable.Add(3, "python");
+                hashtable.Add(4, "javascript");
+                hashtable.Add(5, "c#");
 
-        private void Add(int v1, string v2)
-        {
-            throw new NotImplementedException();
+
+                foreach(DictionaryEntry key in hashtable)
+                {
+                    Console.WriteLine("keys and values of hashtable key{0} Value {1}",key.Key,key.Value);
+                }
+                Console.ReadLine();
+              
+            }
         }
+
+
     }
 }

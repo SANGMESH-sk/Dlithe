@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Task26
 {
-    internal class Exception
+    internal class MultipleCatch
     {
         /* Exception:- is a problem that arises during execution of the code 
          * its  having 4-types
@@ -63,10 +63,6 @@ namespace Task26
                     Console.ReadLine();
                 }
             }
-            
-               
-
-
         }
         public static void Main()
         {
